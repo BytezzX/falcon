@@ -34,6 +34,8 @@ local magg = Instance.new("TextButton")
 local magc = Instance.new("TextButton")
 local peep = Instance.new("TextButton")
 local rad = Instance.new("TextButton")
+local magb = Instance.new("TextButton")
+local spirkey = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local rain = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
@@ -67,7 +69,6 @@ h.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
 h.BorderColor3 = Color3.fromRGB(144, 47, 139)
 h.Position = UDim2.new(0.136093557, 0, 0.421428531, 0)
 h.Size = UDim2.new(0, 644, 0, 28)
-h.Visible = false
 h.ZIndex = 1000000000
 
 TextLabel.Parent = h
@@ -365,6 +366,7 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(144, 47, 139)
 ScrollingFrame.Position = UDim2.new(0.5309273, 0, 0.349447012, 0)
 ScrollingFrame.Size = UDim2.new(0, 294, 0, 116)
 ScrollingFrame.ZIndex = 1000000000
+ScrollingFrame.CanvasPosition = Vector2.new(0, 45.1724052)
 
 goober.Name = "goober"
 goober.Parent = ScrollingFrame
@@ -426,7 +428,7 @@ peep.Name = "peep"
 peep.Parent = ScrollingFrame
 peep.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 peep.BorderColor3 = Color3.fromRGB(175, 57, 169)
-peep.Position = UDim2.new(0.503401399, 0, 0.131898716, 0)
+peep.Position = UDim2.new(0.503000021, 0, 0.129999995, 0)
 peep.Size = UDim2.new(0, 131, 0, 31)
 peep.ZIndex = 1000000000
 peep.Font = Enum.Font.GothamBlack
@@ -440,7 +442,7 @@ rad.Name = "rad"
 rad.Parent = ScrollingFrame
 rad.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 rad.BorderColor3 = Color3.fromRGB(175, 57, 169)
-rad.Position = UDim2.new(0.0240000002, 0, 0.131999999, 0)
+rad.Position = UDim2.new(0.0240000002, 0, 0.129999995, 0)
 rad.Size = UDim2.new(0, 131, 0, 31)
 rad.ZIndex = 1000000000
 rad.Font = Enum.Font.GothamBlack
@@ -449,6 +451,34 @@ rad.TextColor3 = Color3.fromRGB(0, 0, 0)
 rad.TextScaled = true
 rad.TextSize = 14.000
 rad.TextWrapped = true
+
+magb.Name = "magb"
+magb.Parent = ScrollingFrame
+magb.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
+magb.BorderColor3 = Color3.fromRGB(175, 57, 169)
+magb.Position = UDim2.new(0.0240000002, 0, 0.188421041, 0)
+magb.Size = UDim2.new(0, 131, 0, 31)
+magb.ZIndex = 1000000000
+magb.Font = Enum.Font.GothamBlack
+magb.Text = "Magnetite Bar"
+magb.TextColor3 = Color3.fromRGB(0, 0, 0)
+magb.TextScaled = true
+magb.TextSize = 14.000
+magb.TextWrapped = true
+
+spirkey.Name = "spirkey"
+spirkey.Parent = ScrollingFrame
+spirkey.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
+spirkey.BorderColor3 = Color3.fromRGB(175, 57, 169)
+spirkey.Position = UDim2.new(0.503401399, 0, 0.187819779, 0)
+spirkey.Size = UDim2.new(0, 131, 0, 31)
+spirkey.ZIndex = 1000000000
+spirkey.Font = Enum.Font.GothamBlack
+spirkey.Text = "Spirit Key"
+spirkey.TextColor3 = Color3.fromRGB(0, 0, 0)
+spirkey.TextScaled = true
+spirkey.TextSize = 14.000
+spirkey.TextWrapped = true
 
 TextLabel_3.Parent = Frame
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -564,7 +594,7 @@ TextLabel_7.TextWrapped = true
 
 -- Scripts:
 
-local function SITWSA_fake_script() -- TextButton.LocalScript 
+local function QBZQS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.h
@@ -577,16 +607,16 @@ local function SITWSA_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(SITWSA_fake_script)()
-local function BUGRA_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QBZQS_fake_script)()
+local function UARZOX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(BUGRA_fake_script)()
-local function IIEI_fake_script() -- esp.LocalScript 
+coroutine.wrap(UARZOX_fake_script)()
+local function SYSUT_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3000,8 +3030,8 @@ local function IIEI_fake_script() -- esp.LocalScript
 		RunService:BindToRenderStep(UpdateName, 199, Update);
 	end)
 end
-coroutine.wrap(IIEI_fake_script)()
-local function FIAAJ_fake_script() -- infjump.LocalScript 
+coroutine.wrap(SYSUT_fake_script)()
+local function AARUTAX_fake_script() -- infjump.LocalScript 
 	local script = Instance.new('LocalScript', infjump)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3034,8 +3064,8 @@ local function FIAAJ_fake_script() -- infjump.LocalScript
 		end)
 		end)
 end
-coroutine.wrap(FIAAJ_fake_script)()
-local function MPJTGXP_fake_script() -- CraftAnyItem.LocalScript 
+coroutine.wrap(AARUTAX_fake_script)()
+local function EVWIAGS_fake_script() -- CraftAnyItem.LocalScript 
 	local script = Instance.new('LocalScript', CraftAnyItem)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -3044,8 +3074,8 @@ local function MPJTGXP_fake_script() -- CraftAnyItem.LocalScript
 		event:FireServer(item)
 	end)
 end
-coroutine.wrap(MPJTGXP_fake_script)()
-local function BCCHF_fake_script() -- Speed.LocalScript 
+coroutine.wrap(EVWIAGS_fake_script)()
+local function EVHKAH_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	--SpeedVariables
@@ -3076,16 +3106,16 @@ local function BCCHF_fake_script() -- Speed.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BCCHF_fake_script)()
-local function ORLWSTU_fake_script() -- infyield.LocalScript 
+coroutine.wrap(EVHKAH_fake_script)()
+local function DSQCQS_fake_script() -- infyield.LocalScript 
 	local script = Instance.new('LocalScript', infyield)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 	end)
 end
-coroutine.wrap(ORLWSTU_fake_script)()
-local function HNCH_fake_script() -- clicktp.LocalScript 
+coroutine.wrap(DSQCQS_fake_script)()
+local function DDDL_fake_script() -- clicktp.LocalScript 
 	local script = Instance.new('LocalScript', clicktp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3101,16 +3131,16 @@ local function HNCH_fake_script() -- clicktp.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(HNCH_fake_script)()
-local function MJSLZT_fake_script() -- antiban.LocalScript 
+coroutine.wrap(DDDL_fake_script)()
+local function ONGVJJ_fake_script() -- antiban.LocalScript 
 	local script = Instance.new('LocalScript', antiban)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.ah.Visible = true
 	end)
 end
-coroutine.wrap(MJSLZT_fake_script)()
-local function HZEVX_fake_script() -- wall.LocalScript 
+coroutine.wrap(ONGVJJ_fake_script)()
+local function EJNZKYV_fake_script() -- wall.LocalScript 
 	local script = Instance.new('LocalScript', wall)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3150,8 +3180,8 @@ local function HZEVX_fake_script() -- wall.LocalScript
 		Event:FireServer(n_1, n_2, n_3)
 	end)
 end
-coroutine.wrap(HZEVX_fake_script)()
-local function LBAUAT_fake_script() -- autocamp.LocalScript 
+coroutine.wrap(EJNZKYV_fake_script)()
+local function HEJZB_fake_script() -- autocamp.LocalScript 
 	local script = Instance.new('LocalScript', autocamp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3205,8 +3235,8 @@ local function LBAUAT_fake_script() -- autocamp.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LBAUAT_fake_script)()
-local function SBSJU_fake_script() -- dropitemos.LocalScript 
+coroutine.wrap(HEJZB_fake_script)()
+local function SDVOQ_fake_script() -- dropitemos.LocalScript 
 	local script = Instance.new('LocalScript', dropitemos)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3225,8 +3255,8 @@ local function SBSJU_fake_script() -- dropitemos.LocalScript
 		Mouse.KeyDown:connect(PressedE)
 	end)
 end
-coroutine.wrap(SBSJU_fake_script)()
-local function ITBY_fake_script() -- tpspam.LocalScript 
+coroutine.wrap(SDVOQ_fake_script)()
+local function LNRKBRV_fake_script() -- tpspam.LocalScript 
 	local script = Instance.new('LocalScript', tpspam)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -3245,8 +3275,8 @@ local function ITBY_fake_script() -- tpspam.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ITBY_fake_script)()
-local function TPFUNVG_fake_script() -- chest.LocalScript 
+coroutine.wrap(LNRKBRV_fake_script)()
+local function VTND_fake_script() -- chest.LocalScript 
 	local script = Instance.new('LocalScript', chest)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3300,8 +3330,8 @@ local function TPFUNVG_fake_script() -- chest.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TPFUNVG_fake_script)()
-local function DFJCK_fake_script() -- goober.LocalScript 
+coroutine.wrap(VTND_fake_script)()
+local function NLHJ_fake_script() -- goober.LocalScript 
 	local script = Instance.new('LocalScript', goober)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3311,8 +3341,8 @@ local function DFJCK_fake_script() -- goober.LocalScript
 		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
 	end)
 end
-coroutine.wrap(DFJCK_fake_script)()
-local function ZMBST_fake_script() -- magm.LocalScript 
+coroutine.wrap(NLHJ_fake_script)()
+local function JRZXZYV_fake_script() -- magm.LocalScript 
 	local script = Instance.new('LocalScript', magm)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3322,8 +3352,8 @@ local function ZMBST_fake_script() -- magm.LocalScript
 		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
 	end)
 end
-coroutine.wrap(ZMBST_fake_script)()
-local function CGXL_fake_script() -- magg.LocalScript 
+coroutine.wrap(JRZXZYV_fake_script)()
+local function OAFMOZL_fake_script() -- magg.LocalScript 
 	local script = Instance.new('LocalScript', magg)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3333,8 +3363,8 @@ local function CGXL_fake_script() -- magg.LocalScript
 		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
 	end)
 end
-coroutine.wrap(CGXL_fake_script)()
-local function CDCQSES_fake_script() -- magc.LocalScript 
+coroutine.wrap(OAFMOZL_fake_script)()
+local function CXZK_fake_script() -- magc.LocalScript 
 	local script = Instance.new('LocalScript', magc)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3344,8 +3374,8 @@ local function CDCQSES_fake_script() -- magc.LocalScript
 		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
 	end)
 end
-coroutine.wrap(CDCQSES_fake_script)()
-local function KQMH_fake_script() -- peep.LocalScript 
+coroutine.wrap(CXZK_fake_script)()
+local function BJCAO_fake_script() -- peep.LocalScript 
 	local script = Instance.new('LocalScript', peep)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3355,8 +3385,8 @@ local function KQMH_fake_script() -- peep.LocalScript
 		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
 	end)
 end
-coroutine.wrap(KQMH_fake_script)()
-local function YVZN_fake_script() -- rad.LocalScript 
+coroutine.wrap(BJCAO_fake_script)()
+local function HNOMQR_fake_script() -- rad.LocalScript 
 	local script = Instance.new('LocalScript', rad)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3366,8 +3396,30 @@ local function YVZN_fake_script() -- rad.LocalScript
 		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
 	end)
 end
-coroutine.wrap(YVZN_fake_script)()
-local function IFVUQJW_fake_script() -- rain.LocalScript 
+coroutine.wrap(HNOMQR_fake_script)()
+local function YYDGXZ_fake_script() -- magb.LocalScript 
+	local script = Instance.new('LocalScript', magb)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Magnetite Bar"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(YYDGXZ_fake_script)()
+local function KQLFV_fake_script() -- spirkey.LocalScript 
+	local script = Instance.new('LocalScript', spirkey)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Spirit Key"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(KQLFV_fake_script)()
+local function CIVPGF_fake_script() -- rain.LocalScript 
 	local script = Instance.new('LocalScript', rain)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3380,8 +3432,8 @@ local function IFVUQJW_fake_script() -- rain.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IFVUQJW_fake_script)()
-local function IPQI_fake_script() -- plant.LocalScript 
+coroutine.wrap(CIVPGF_fake_script)()
+local function TMLCTAW_fake_script() -- plant.LocalScript 
 	local script = Instance.new('LocalScript', plant)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3395,11 +3447,11 @@ local function IPQI_fake_script() -- plant.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IPQI_fake_script)()
-local function LQVQWK_fake_script() -- h.LocalScript 
+coroutine.wrap(TMLCTAW_fake_script)()
+local function XXUB_fake_script() -- h.LocalScript 
 	local script = Instance.new('LocalScript', h)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(LQVQWK_fake_script)()
+coroutine.wrap(XXUB_fake_script)()
