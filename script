@@ -4,25 +4,14 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local goober = Instance.new("TextButton")
-local magm = Instance.new("TextButton")
-local magg = Instance.new("TextButton")
-local magc = Instance.new("TextButton")
-local peep = Instance.new("TextButton")
-local rad = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
 local h = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextButton_3 = Instance.new("TextButton")
-local Frame_3 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
 local esp = Instance.new("TextButton")
 local infjump = Instance.new("TextButton")
-local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 local CraftAnyItem = Instance.new("TextButton")
 local CraftItem = Instance.new("TextBox")
 local Speed = Instance.new("TextButton")
@@ -30,9 +19,30 @@ local infyield = Instance.new("TextButton")
 local SpeedBind = Instance.new("TextBox")
 local clicktp = Instance.new("TextButton")
 local antiban = Instance.new("TextButton")
-local TextButton_4 = Instance.new("TextButton")
-local ah = Instance.new("Frame")
+local wall = Instance.new("TextButton")
+local autocamp = Instance.new("TextButton")
+local tpspamus = Instance.new("TextBox")
+local dropitemos = Instance.new("TextButton")
+local tpspam = Instance.new("TextButton")
+local itemname = Instance.new("TextBox")
+local itemkeybind = Instance.new("TextBox")
+local chest = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local goober = Instance.new("TextButton")
+local magm = Instance.new("TextButton")
+local magg = Instance.new("TextButton")
+local magc = Instance.new("TextButton")
+local peep = Instance.new("TextButton")
+local rad = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local rain = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local frname = Instance.new("TextBox")
+local plant = Instance.new("TextButton")
+local ah = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -40,33 +50,329 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-Frame.BorderColor3 = Color3.fromRGB(144, 47, 139)
-Frame.Position = UDim2.new(0.156336501, 0, 0.440476179, 0)
-Frame.Size = UDim2.new(0, 338, 0, 28)
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+TextButton.BorderColor3 = Color3.fromRGB(144, 47, 139)
+TextButton.Position = UDim2.new(0.00398681685, 0, 0.679894209, 0)
+TextButton.Size = UDim2.new(0, 99, 0, 43)
+TextButton.ZIndex = 1000000000
+TextButton.Font = Enum.Font.GothamBlack
+TextButton.Text = "Open FX"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+h.Name = "h"
+h.Parent = ScreenGui
+h.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+h.BorderColor3 = Color3.fromRGB(144, 47, 139)
+h.Position = UDim2.new(0.136093557, 0, 0.421428531, 0)
+h.Size = UDim2.new(0, 644, 0, 28)
+h.Visible = false
+h.ZIndex = 1000000000
+
+TextLabel.Parent = h
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0226582773, 0, 0.0357142873, 0)
+TextLabel.Size = UDim2.new(0, 122, 0, 28)
+TextLabel.ZIndex = 1000000000
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "FALCON X"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextButton_2.Parent = h
+TextButton_2.BackgroundColor3 = Color3.fromRGB(153, 19, 84)
+TextButton_2.BorderColor3 = Color3.fromRGB(153, 19, 84)
+TextButton_2.Position = UDim2.new(0.955809057, 0, -0.0357142873, 0)
+TextButton_2.Size = UDim2.new(0, 28, 0, 28)
+TextButton_2.ZIndex = 1000000000
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 25.000
+
+Frame.Parent = h
+Frame.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
+Frame.BorderColor3 = Color3.fromRGB(175, 57, 169)
+Frame.Position = UDim2.new(0, 0, 0.964286268, 0)
+Frame.Size = UDim2.new(0, 644, 0, 304)
 Frame.ZIndex = 1000000000
 
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
-Frame_2.BorderColor3 = Color3.fromRGB(175, 57, 169)
-Frame_2.Position = UDim2.new(0, 0, 1, 0)
-Frame_2.Size = UDim2.new(0, 338, 0, 138)
-Frame_2.ZIndex = 10
+esp.Name = "esp"
+esp.Parent = Frame
+esp.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+esp.BorderColor3 = Color3.fromRGB(144, 47, 139)
+esp.Position = UDim2.new(0.201503485, 0, 0.350084186, 0)
+esp.Size = UDim2.new(0, 94, 0, 31)
+esp.ZIndex = 1000000000
+esp.Font = Enum.Font.GothamBlack
+esp.Text = "ESP (WON'T WORK ON WRD)"
+esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+esp.TextScaled = true
+esp.TextSize = 14.000
+esp.TextWrapped = true
 
-ScrollingFrame.Parent = Frame_2
+infjump.Name = "infjump"
+infjump.Parent = Frame
+infjump.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+infjump.BorderColor3 = Color3.fromRGB(144, 47, 139)
+infjump.Position = UDim2.new(0.0319682732, 0, 0.3513771, 0)
+infjump.Size = UDim2.new(0, 94, 0, 31)
+infjump.ZIndex = 1000000000
+infjump.Font = Enum.Font.GothamBlack
+infjump.Text = "Infinite Jump"
+infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infjump.TextScaled = true
+infjump.TextSize = 14.000
+infjump.TextWrapped = true
+
+TextLabel_2.Parent = infjump
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.180851042, 0, 0.903225839, 0)
+TextLabel_2.Size = UDim2.new(0, 59, 0, 22)
+TextLabel_2.ZIndex = 1000000000
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Toggle = M"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+CraftAnyItem.Name = "CraftAnyItem"
+CraftAnyItem.Parent = Frame
+CraftAnyItem.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+CraftAnyItem.BorderColor3 = Color3.fromRGB(99, 32, 96)
+CraftAnyItem.Position = UDim2.new(0.202920824, 0, 0.178418353, 0)
+CraftAnyItem.Size = UDim2.new(0, 94, 0, 31)
+CraftAnyItem.ZIndex = 1000000000
+CraftAnyItem.Font = Enum.Font.GothamBlack
+CraftAnyItem.Text = "CRAFT"
+CraftAnyItem.TextColor3 = Color3.fromRGB(0, 0, 0)
+CraftAnyItem.TextScaled = true
+CraftAnyItem.TextSize = 14.000
+CraftAnyItem.TextWrapped = true
+
+CraftItem.Name = "CraftItem"
+CraftItem.Parent = Frame
+CraftItem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CraftItem.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CraftItem.Position = UDim2.new(0.202956513, 0, 0.0430000015, 0)
+CraftItem.Size = UDim2.new(0, 94, 0, 30)
+CraftItem.ZIndex = 1000000000
+CraftItem.Font = Enum.Font.GothamBlack
+CraftItem.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+CraftItem.PlaceholderText = "Item Name"
+CraftItem.Text = ""
+CraftItem.TextColor3 = Color3.fromRGB(0, 0, 0)
+CraftItem.TextScaled = true
+CraftItem.TextSize = 15.000
+CraftItem.TextWrapped = true
+
+Speed.Name = "Speed"
+Speed.Parent = Frame
+Speed.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+Speed.BorderColor3 = Color3.fromRGB(99, 32, 96)
+Speed.Position = UDim2.new(0.0319683254, 0, 0.178418383, 0)
+Speed.Size = UDim2.new(0, 94, 0, 31)
+Speed.ZIndex = 1000000000
+Speed.Font = Enum.Font.GothamBlack
+Speed.Text = "SPEED"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+infyield.Name = "infyield"
+infyield.Parent = Frame
+infyield.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+infyield.BorderColor3 = Color3.fromRGB(144, 47, 139)
+infyield.Position = UDim2.new(0.370947957, 0, 0.512561321, 0)
+infyield.Size = UDim2.new(0, 94, 0, 31)
+infyield.ZIndex = 1000000000
+infyield.Font = Enum.Font.GothamBlack
+infyield.Text = "Infinite Yield (Admin)"
+infyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+infyield.TextScaled = true
+infyield.TextSize = 14.000
+infyield.TextWrapped = true
+
+SpeedBind.Name = "SpeedBind"
+SpeedBind.Parent = Frame
+SpeedBind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBind.BorderColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBind.Position = UDim2.new(0.0333333351, 0, 0.0435835719, 0)
+SpeedBind.Size = UDim2.new(0, 94, 0, 30)
+SpeedBind.ZIndex = 1000000000
+SpeedBind.Font = Enum.Font.GothamBlack
+SpeedBind.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedBind.PlaceholderText = "Keybind"
+SpeedBind.Text = ""
+SpeedBind.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedBind.TextScaled = true
+SpeedBind.TextSize = 14.000
+SpeedBind.TextWrapped = true
+
+clicktp.Name = "click tp"
+clicktp.Parent = Frame
+clicktp.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+clicktp.BorderColor3 = Color3.fromRGB(144, 47, 139)
+clicktp.Position = UDim2.new(0.371081591, 0, 0.349822938, 0)
+clicktp.Size = UDim2.new(0, 94, 0, 31)
+clicktp.ZIndex = 1000000000
+clicktp.Font = Enum.Font.GothamBlack
+clicktp.Text = "Click TP (Press F)"
+clicktp.TextColor3 = Color3.fromRGB(0, 0, 0)
+clicktp.TextScaled = true
+clicktp.TextSize = 14.000
+clicktp.TextWrapped = true
+
+antiban.Name = "antiban"
+antiban.Parent = Frame
+antiban.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+antiban.BorderColor3 = Color3.fromRGB(144, 47, 139)
+antiban.Position = UDim2.new(0.0331460834, 0, 0.670456111, 0)
+antiban.Size = UDim2.new(0, 94, 0, 31)
+antiban.ZIndex = 1000000000
+antiban.Font = Enum.Font.GothamBlack
+antiban.Text = "Anti-Ban"
+antiban.TextColor3 = Color3.fromRGB(0, 0, 0)
+antiban.TextScaled = true
+antiban.TextSize = 14.000
+antiban.TextWrapped = true
+
+wall.Name = "wall"
+wall.Parent = Frame
+wall.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+wall.BorderColor3 = Color3.fromRGB(144, 47, 139)
+wall.Position = UDim2.new(0.0327888206, 0, 0.51555264, 0)
+wall.Size = UDim2.new(0, 94, 0, 31)
+wall.ZIndex = 1000000000
+wall.Font = Enum.Font.GothamBlack
+wall.Text = "Autowall"
+wall.TextColor3 = Color3.fromRGB(0, 0, 0)
+wall.TextScaled = true
+wall.TextSize = 14.000
+wall.TextWrapped = true
+
+autocamp.Name = "autocamp"
+autocamp.Parent = Frame
+autocamp.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+autocamp.BorderColor3 = Color3.fromRGB(144, 47, 139)
+autocamp.Position = UDim2.new(0.200140476, 0, 0.512962222, 0)
+autocamp.Size = UDim2.new(0, 94, 0, 31)
+autocamp.ZIndex = 1000000000
+autocamp.Font = Enum.Font.GothamBlack
+autocamp.Text = "AutoCampfire"
+autocamp.TextColor3 = Color3.fromRGB(0, 0, 0)
+autocamp.TextScaled = true
+autocamp.TextSize = 14.000
+autocamp.TextWrapped = true
+
+tpspamus.Name = "tpspamus"
+tpspamus.Parent = Frame
+tpspamus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpspamus.BorderColor3 = Color3.fromRGB(255, 255, 255)
+tpspamus.Position = UDim2.new(0.372021377, 0, 0.0430000015, 0)
+tpspamus.Size = UDim2.new(0, 94, 0, 30)
+tpspamus.ZIndex = 1000000000
+tpspamus.Font = Enum.Font.GothamBlack
+tpspamus.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+tpspamus.PlaceholderText = "Username"
+tpspamus.Text = ""
+tpspamus.TextColor3 = Color3.fromRGB(0, 0, 0)
+tpspamus.TextScaled = true
+tpspamus.TextSize = 15.000
+tpspamus.TextWrapped = true
+
+dropitemos.Name = "dropitemos"
+dropitemos.Parent = Frame
+dropitemos.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+dropitemos.BorderColor3 = Color3.fromRGB(99, 32, 96)
+dropitemos.Position = UDim2.new(0.710820258, 0, 0.176763773, 0)
+dropitemos.Size = UDim2.new(0, 94, 0, 31)
+dropitemos.ZIndex = 1000000000
+dropitemos.Font = Enum.Font.GothamBlack
+dropitemos.Text = "QUICK DROP"
+dropitemos.TextColor3 = Color3.fromRGB(0, 0, 0)
+dropitemos.TextScaled = true
+dropitemos.TextSize = 14.000
+dropitemos.TextWrapped = true
+
+tpspam.Name = "tpspam"
+tpspam.Parent = Frame
+tpspam.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+tpspam.BorderColor3 = Color3.fromRGB(99, 32, 96)
+tpspam.Position = UDim2.new(0.371655315, 0, 0.176928893, 0)
+tpspam.Size = UDim2.new(0, 94, 0, 31)
+tpspam.ZIndex = 1000000000
+tpspam.Font = Enum.Font.GothamBlack
+tpspam.Text = "TPSPAM"
+tpspam.TextColor3 = Color3.fromRGB(0, 0, 0)
+tpspam.TextScaled = true
+tpspam.TextSize = 14.000
+tpspam.TextWrapped = true
+
+itemname.Name = "itemname"
+itemname.Parent = Frame
+itemname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+itemname.BorderColor3 = Color3.fromRGB(255, 255, 255)
+itemname.Position = UDim2.new(0.799091756, 0, 0.0404297113, 0)
+itemname.Size = UDim2.new(0, 94, 0, 30)
+itemname.ZIndex = 1000000000
+itemname.Font = Enum.Font.GothamBlack
+itemname.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+itemname.PlaceholderText = "Item Name"
+itemname.Text = ""
+itemname.TextColor3 = Color3.fromRGB(0, 0, 0)
+itemname.TextScaled = true
+itemname.TextSize = 15.000
+itemname.TextWrapped = true
+
+itemkeybind.Name = "itemkeybind"
+itemkeybind.Parent = Frame
+itemkeybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+itemkeybind.BorderColor3 = Color3.fromRGB(255, 255, 255)
+itemkeybind.Position = UDim2.new(0.621313989, 0, 0.0404297113, 0)
+itemkeybind.Size = UDim2.new(0, 94, 0, 30)
+itemkeybind.ZIndex = 1000000000
+itemkeybind.Font = Enum.Font.GothamBlack
+itemkeybind.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+itemkeybind.PlaceholderText = "Keybind"
+itemkeybind.Text = ""
+itemkeybind.TextColor3 = Color3.fromRGB(0, 0, 0)
+itemkeybind.TextScaled = true
+itemkeybind.TextSize = 15.000
+itemkeybind.TextWrapped = true
+
+chest.Name = "chest"
+chest.Parent = Frame
+chest.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+chest.BorderColor3 = Color3.fromRGB(144, 47, 139)
+chest.Position = UDim2.new(0.199295148, 0, 0.670456111, 0)
+chest.Size = UDim2.new(0, 94, 0, 31)
+chest.ZIndex = 1000000000
+chest.Font = Enum.Font.GothamBlack
+chest.Text = "Place Chest"
+chest.TextColor3 = Color3.fromRGB(0, 0, 0)
+chest.TextScaled = true
+chest.TextSize = 14.000
+chest.TextWrapped = true
+
+ScrollingFrame.Parent = Frame
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
 ScrollingFrame.BorderColor3 = Color3.fromRGB(144, 47, 139)
-ScrollingFrame.Position = UDim2.new(0.0650887564, 0, 0.0797101483, 0)
+ScrollingFrame.Position = UDim2.new(0.5309273, 0, 0.349447012, 0)
 ScrollingFrame.Size = UDim2.new(0, 294, 0, 116)
+ScrollingFrame.ZIndex = 1000000000
 
 goober.Name = "goober"
 goober.Parent = ScrollingFrame
 goober.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 goober.BorderColor3 = Color3.fromRGB(175, 57, 169)
-goober.Position = UDim2.new(0.0238095243, 0, 0.0258966461, 0)
+goober.Position = UDim2.new(0.0238095243, 0, 0.0110940142, 0)
 goober.Size = UDim2.new(0, 131, 0, 31)
+goober.ZIndex = 1000000000
 goober.Font = Enum.Font.GothamBlack
 goober.Text = "Goober Bag"
 goober.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -78,8 +384,9 @@ magm.Name = "magm"
 magm.Parent = ScrollingFrame
 magm.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 magm.BorderColor3 = Color3.fromRGB(175, 57, 169)
-magm.Position = UDim2.new(0.503401399, 0, 0.0258966461, 0)
+magm.Position = UDim2.new(0.503401399, 0, 0.0110940142, 0)
 magm.Size = UDim2.new(0, 131, 0, 31)
+magm.ZIndex = 1000000000
 magm.Font = Enum.Font.GothamBlack
 magm.Text = "Magnetite Mask"
 magm.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -91,8 +398,9 @@ magg.Name = "magg"
 magg.Parent = ScrollingFrame
 magg.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 magg.BorderColor3 = Color3.fromRGB(175, 57, 169)
-magg.Position = UDim2.new(0.503401399, 0, 0.181693733, 0)
+magg.Position = UDim2.new(0.503401399, 0, 0.0698516294, 0)
 magg.Size = UDim2.new(0, 131, 0, 31)
+magg.ZIndex = 1000000000
 magg.Font = Enum.Font.GothamBlack
 magg.Text = "Magnetite Greaves"
 magg.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -104,8 +412,9 @@ magc.Name = "magc"
 magc.Parent = ScrollingFrame
 magc.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 magc.BorderColor3 = Color3.fromRGB(175, 57, 169)
-magc.Position = UDim2.new(0.0238095243, 0, 0.181693733, 0)
+magc.Position = UDim2.new(0.0238095243, 0, 0.0698516294, 0)
 magc.Size = UDim2.new(0, 131, 0, 31)
+magc.ZIndex = 1000000000
 magc.Font = Enum.Font.GothamBlack
 magc.Text = "Magnetite Chestplate"
 magc.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -117,9 +426,9 @@ peep.Name = "peep"
 peep.Parent = ScrollingFrame
 peep.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 peep.BorderColor3 = Color3.fromRGB(175, 57, 169)
-peep.Position = UDim2.new(0.503401399, 0, 0.337490827, 0)
+peep.Position = UDim2.new(0.503401399, 0, 0.131898716, 0)
 peep.Size = UDim2.new(0, 131, 0, 31)
-peep.ZIndex = 20
+peep.ZIndex = 1000000000
 peep.Font = Enum.Font.GothamBlack
 peep.Text = "Peeper Popsicle"
 peep.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -131,9 +440,9 @@ rad.Name = "rad"
 rad.Parent = ScrollingFrame
 rad.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
 rad.BorderColor3 = Color3.fromRGB(175, 57, 169)
-rad.Position = UDim2.new(0.0238095243, 0, 0.337490827, 0)
+rad.Position = UDim2.new(0.0240000002, 0, 0.131999999, 0)
 rad.Size = UDim2.new(0, 131, 0, 31)
-rad.ZIndex = 20
+rad.ZIndex = 1000000000
 rad.Font = Enum.Font.GothamBlack
 rad.Text = "Radio Pack"
 rad.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -141,373 +450,124 @@ rad.TextScaled = true
 rad.TextSize = 14.000
 rad.TextWrapped = true
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-1.86264515e-09, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 82, 0, 28)
-TextLabel.ZIndex = 10
-TextLabel.Font = Enum.Font.GothamBlack
-TextLabel.Text = "FALCON X"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(153, 19, 84)
-TextButton.BorderColor3 = Color3.fromRGB(153, 19, 84)
-TextButton.Position = UDim2.new(0.914324641, 0, 0, 0)
-TextButton.Size = UDim2.new(0, 29, 0, 26)
-TextButton.ZIndex = 1000000000
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "X"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 25.000
-
-TextButton_2.Parent = ScreenGui
-TextButton_2.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-TextButton_2.BorderColor3 = Color3.fromRGB(144, 47, 139)
-TextButton_2.Position = UDim2.new(0.00398681685, 0, 0.679894209, 0)
-TextButton_2.Size = UDim2.new(0, 99, 0, 43)
-TextButton_2.ZIndex = 1000000000
-TextButton_2.Font = Enum.Font.GothamBlack
-TextButton_2.Text = "Open FX"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 14.000
-
-h.Name = "h"
-h.Parent = ScreenGui
-h.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-h.BorderColor3 = Color3.fromRGB(144, 47, 139)
-h.Position = UDim2.new(0.0634334311, 0, 0.0607142486, 0)
-h.Size = UDim2.new(0, 360, 0, 28)
-h.Visible = false
-h.ZIndex = 1000000000
-
-TextLabel_2.Parent = h
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(-0.00402473658, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 122, 0, 28)
-TextLabel_2.ZIndex = 1000000000
-TextLabel_2.Font = Enum.Font.GothamBlack
-TextLabel_2.Text = "FALCON X MODZ"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 14.000
-
-TextButton_3.Parent = h
-TextButton_3.BackgroundColor3 = Color3.fromRGB(153, 19, 84)
-TextButton_3.BorderColor3 = Color3.fromRGB(153, 19, 84)
-TextButton_3.Position = UDim2.new(0.923200369, 0, 0.0357142873, 0)
-TextButton_3.Size = UDim2.new(0, 28, 0, 28)
-TextButton_3.ZIndex = 1000000000
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "X"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextSize = 25.000
-
-Frame_3.Parent = h
-Frame_3.BackgroundColor3 = Color3.fromRGB(175, 57, 169)
-Frame_3.BorderColor3 = Color3.fromRGB(175, 57, 169)
-Frame_3.Position = UDim2.new(0, 0, 0.964286268, 0)
-Frame_3.Size = UDim2.new(0, 360, 0, 154)
-Frame_3.ZIndex = 1000000000
-
-esp.Name = "esp"
-esp.Parent = Frame_3
-esp.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-esp.BorderColor3 = Color3.fromRGB(144, 47, 139)
-esp.Position = UDim2.new(0.697742283, 0, 0.355271906, 0)
-esp.Size = UDim2.new(0, 94, 0, 31)
-esp.ZIndex = 1000000000
-esp.Font = Enum.Font.GothamBlack
-esp.Text = "ESP"
-esp.TextColor3 = Color3.fromRGB(0, 0, 0)
-esp.TextScaled = true
-esp.TextSize = 14.000
-esp.TextWrapped = true
-
-infjump.Name = "infjump"
-infjump.Parent = Frame_3
-infjump.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-infjump.BorderColor3 = Color3.fromRGB(144, 47, 139)
-infjump.Position = UDim2.new(0.0329517126, 0, 0.679947197, 0)
-infjump.Size = UDim2.new(0, 94, 0, 31)
-infjump.ZIndex = 1000000000
-infjump.Font = Enum.Font.GothamBlack
-infjump.Text = "Infinite Jump"
-infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
-infjump.TextScaled = true
-infjump.TextSize = 14.000
-infjump.TextWrapped = true
-
-TextLabel_3.Parent = infjump
+TextLabel_3.Parent = Frame
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.180851042, 0, 0.903225839, 0)
-TextLabel_3.Size = UDim2.new(0, 59, 0, 22)
+TextLabel_3.Position = UDim2.new(0.606999993, 0, 0.298999995, 0)
+TextLabel_3.Size = UDim2.new(0, 193, 0, 15)
 TextLabel_3.ZIndex = 1000000000
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Toggle = M"
+TextLabel_3.Font = Enum.Font.GothamBlack
+TextLabel_3.Text = "DUPING SECTION"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
-CraftAnyItem.Name = "CraftAnyItem"
-CraftAnyItem.Parent = Frame_3
-CraftAnyItem.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-CraftAnyItem.BorderColor3 = Color3.fromRGB(99, 32, 96)
-CraftAnyItem.Position = UDim2.new(0.368414283, 0, 0.355271786, 0)
-CraftAnyItem.Size = UDim2.new(0, 94, 0, 31)
-CraftAnyItem.ZIndex = 1000000000
-CraftAnyItem.Font = Enum.Font.GothamBlack
-CraftAnyItem.Text = "CRAFT"
-CraftAnyItem.TextColor3 = Color3.fromRGB(0, 0, 0)
-CraftAnyItem.TextScaled = true
-CraftAnyItem.TextSize = 14.000
-CraftAnyItem.TextWrapped = true
+rain.Name = "rain"
+rain.Parent = Frame
+rain.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+rain.BorderColor3 = Color3.fromRGB(144, 47, 139)
+rain.Position = UDim2.new(0.371655405, 0, 0.670456111, 0)
+rain.Size = UDim2.new(0, 94, 0, 31)
+rain.ZIndex = 1000000000
+rain.Font = Enum.Font.GothamBlack
+rain.Text = "Remove Rain"
+rain.TextColor3 = Color3.fromRGB(0, 0, 0)
+rain.TextScaled = true
+rain.TextSize = 14.000
+rain.TextWrapped = true
 
-CraftItem.Name = "CraftItem"
-CraftItem.Parent = Frame_3
-CraftItem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CraftItem.BorderColor3 = Color3.fromRGB(255, 255, 255)
-CraftItem.Position = UDim2.new(0.365999997, 0, 0.0430000015, 0)
-CraftItem.Size = UDim2.new(0, 94, 0, 30)
-CraftItem.ZIndex = 1000000000
-CraftItem.Font = Enum.Font.GothamBlack
-CraftItem.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
-CraftItem.PlaceholderText = "INPUT ITEM NAME"
-CraftItem.Text = ""
-CraftItem.TextColor3 = Color3.fromRGB(0, 0, 0)
-CraftItem.TextScaled = true
-CraftItem.TextSize = 15.000
-CraftItem.TextWrapped = true
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.177018628, 0, 0.898026347, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 19)
+TextLabel_4.ZIndex = 1000000000
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Big Thanks To bobm321123#2152 and Hush#5658 for testing and giving me ideas."
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
 
-Speed.Name = "Speed"
-Speed.Parent = Frame_3
-Speed.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-Speed.BorderColor3 = Color3.fromRGB(99, 32, 96)
-Speed.Position = UDim2.new(0.0329517648, 0, 0.355271816, 0)
-Speed.Size = UDim2.new(0, 94, 0, 31)
-Speed.ZIndex = 1000000000
-Speed.Font = Enum.Font.GothamBlack
-Speed.Text = "SPEED"
-Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
-Speed.TextScaled = true
-Speed.TextSize = 14.000
-Speed.TextWrapped = true
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.177018628, 0, 0.9375, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 19)
+TextLabel_5.ZIndex = 1000000000
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "But Bigger Thanks To Me (Sub-Cent#5213) For Making This Script"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 14.000
 
-infyield.Name = "infyield"
-infyield.Parent = Frame_3
-infyield.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-infyield.BorderColor3 = Color3.fromRGB(144, 47, 139)
-infyield.Position = UDim2.new(0.36440894, 0, 0.679947197, 0)
-infyield.Size = UDim2.new(0, 94, 0, 31)
-infyield.ZIndex = 1000000000
-infyield.Font = Enum.Font.GothamBlack
-infyield.Text = "Infinite Yield (Admin)"
-infyield.TextColor3 = Color3.fromRGB(0, 0, 0)
-infyield.TextScaled = true
-infyield.TextSize = 14.000
-infyield.TextWrapped = true
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.755291998, 0, -0.0925751925, 0)
+TextLabel_6.Size = UDim2.new(0, 122, 0, 28)
+TextLabel_6.ZIndex = 1000000000
+TextLabel_6.Font = Enum.Font.GothamBlack
+TextLabel_6.Text = "THE BEST CHOICE"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 14.000
 
-SpeedBind.Name = "SpeedBind"
-SpeedBind.Parent = Frame_3
-SpeedBind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SpeedBind.BorderColor3 = Color3.fromRGB(255, 255, 255)
-SpeedBind.Position = UDim2.new(0.0333333351, 0, 0.0435835719, 0)
-SpeedBind.Size = UDim2.new(0, 94, 0, 30)
-SpeedBind.ZIndex = 1000000000
-SpeedBind.Font = Enum.Font.GothamBlack
-SpeedBind.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
-SpeedBind.PlaceholderText = "ENTER SPEED BIND HERE"
-SpeedBind.Text = ""
-SpeedBind.TextColor3 = Color3.fromRGB(0, 0, 0)
-SpeedBind.TextScaled = true
-SpeedBind.TextSize = 14.000
-SpeedBind.TextWrapped = true
+frname.Name = "frname"
+frname.Parent = Frame
+frname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+frname.BorderColor3 = Color3.fromRGB(255, 255, 255)
+frname.Position = UDim2.new(0.682632148, 0, 0.764113903, 0)
+frname.Size = UDim2.new(0, 94, 0, 30)
+frname.ZIndex = 1000000000
+frname.Font = Enum.Font.GothamBlack
+frname.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+frname.PlaceholderText = "Fruit Name"
+frname.Text = ""
+frname.TextColor3 = Color3.fromRGB(0, 0, 0)
+frname.TextScaled = true
+frname.TextSize = 15.000
+frname.TextWrapped = true
 
-clicktp.Name = "click tp"
-clicktp.Parent = Frame_3
-clicktp.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-clicktp.BorderColor3 = Color3.fromRGB(144, 47, 139)
-clicktp.Position = UDim2.new(0.699618459, 0, 0.0435835719, 0)
-clicktp.Size = UDim2.new(0, 94, 0, 31)
-clicktp.ZIndex = 1000000000
-clicktp.Font = Enum.Font.GothamBlack
-clicktp.Text = "Click TP (Press F)"
-clicktp.TextColor3 = Color3.fromRGB(0, 0, 0)
-clicktp.TextScaled = true
-clicktp.TextSize = 14.000
-clicktp.TextWrapped = true
-
-antiban.Name = "antiban"
-antiban.Parent = Frame_3
-antiban.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-antiban.BorderColor3 = Color3.fromRGB(144, 47, 139)
-antiban.Position = UDim2.new(0.697742283, 0, 0.679947197, 0)
-antiban.Size = UDim2.new(0, 94, 0, 31)
-antiban.ZIndex = 1000000000
-antiban.Font = Enum.Font.GothamBlack
-antiban.Text = "Anti-Ban"
-antiban.TextColor3 = Color3.fromRGB(0, 0, 0)
-antiban.TextScaled = true
-antiban.TextSize = 14.000
-antiban.TextWrapped = true
-
-TextButton_4.Parent = ScreenGui
-TextButton_4.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
-TextButton_4.BorderColor3 = Color3.fromRGB(144, 47, 139)
-TextButton_4.Position = UDim2.new(0.0794525445, 0, 0.679894149, 0)
-TextButton_4.Size = UDim2.new(0, 99, 0, 43)
-TextButton_4.ZIndex = 1000000000
-TextButton_4.Font = Enum.Font.GothamBlack
-TextButton_4.Text = "Open FXMZ"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextSize = 14.000
+plant.Name = "plant"
+plant.Parent = Frame
+plant.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
+plant.BorderColor3 = Color3.fromRGB(99, 32, 96)
+plant.Position = UDim2.new(0.682869971, 0, 0.877421677, 0)
+plant.Size = UDim2.new(0, 94, 0, 31)
+plant.ZIndex = 1000000000
+plant.Font = Enum.Font.GothamBlack
+plant.Text = "PLANT"
+plant.TextColor3 = Color3.fromRGB(0, 0, 0)
+plant.TextScaled = true
+plant.TextSize = 14.000
+plant.TextWrapped = true
 
 ah.Name = "ah"
 ah.Parent = ScreenGui
 ah.BackgroundColor3 = Color3.fromRGB(144, 47, 139)
 ah.BorderColor3 = Color3.fromRGB(99, 32, 96)
-ah.Position = UDim2.new(0.393444002, 0, -0.000210762024, 0)
-ah.Size = UDim2.new(0, 408, 0, 40)
+ah.Position = UDim2.new(0.445554465, 0, -0.000210762024, 0)
+ah.Size = UDim2.new(0, 208, 0, 30)
 ah.Visible = false
 ah.ZIndex = 1000000000
 
-TextLabel_4.Parent = ah
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.031921234, 0, -0.153681293, 0)
-TextLabel_4.Size = UDim2.new(0, 381, 0, 52)
-TextLabel_4.ZIndex = 1000000000
-TextLabel_4.Font = Enum.Font.GothamBlack
-TextLabel_4.Text = "ANTI-BAN LOADED"
-TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
+TextLabel_7.Parent = ah
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.014423077, 0, -0.333333343, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_7.ZIndex = 1000000000
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Anti-Ban v.01"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
 
 -- Scripts:
 
-local function EUYOY_fake_script() -- Frame.Dragify 
-	local script = Instance.new('LocalScript', Frame)
-
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0.50
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
-	
-	dragify(script.Parent)
-end
-coroutine.wrap(EUYOY_fake_script)()
-local function WOFLH_fake_script() -- goober.LocalScript 
-	local script = Instance.new('LocalScript', goober)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Item = "Goober Bag"
-		local amount = 1.9
-		local price = 100000
-		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
-	end)
-end
-coroutine.wrap(WOFLH_fake_script)()
-local function HWDMLF_fake_script() -- magm.LocalScript 
-	local script = Instance.new('LocalScript', magm)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Item = "Magnetite Mask"
-		local amount = 1.9
-		local price = 100000
-		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
-	end)
-end
-coroutine.wrap(HWDMLF_fake_script)()
-local function VFAHJI_fake_script() -- magg.LocalScript 
-	local script = Instance.new('LocalScript', magg)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Item = "Magnetite Greaves"
-		local amount = 1.9
-		local price = 100000
-		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
-	end)
-end
-coroutine.wrap(VFAHJI_fake_script)()
-local function UGKIR_fake_script() -- magc.LocalScript 
-	local script = Instance.new('LocalScript', magc)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Item = "Magnetite Chestplate"
-		local amount = 1.9
-		local price = 100000
-		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
-	end)
-end
-coroutine.wrap(UGKIR_fake_script)()
-local function OZNIPCH_fake_script() -- peep.LocalScript 
-	local script = Instance.new('LocalScript', peep)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Item = "Peeper Popsicle"
-		local amount = 1.9
-		local price = 100000
-		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
-	end)
-end
-coroutine.wrap(OZNIPCH_fake_script)()
-local function SAADW_fake_script() -- rad.LocalScript 
-	local script = Instance.new('LocalScript', rad)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local Item = "Radio Pack"
-		local amount = 1.9
-		local price = 100000
-		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
-	end)
-end
-coroutine.wrap(SAADW_fake_script)()
-local function CVGP_fake_script() -- TextButton.LocalScript 
+local function SITWSA_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(CVGP_fake_script)()
-local function ANYN_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	local frame = script.Parent.Parent.Frame
+	local frame = script.Parent.Parent.h
 	local open = false
 	
 	script.Parent.MouseButton1Click:Connect(function()
@@ -517,16 +577,16 @@ local function ANYN_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(ANYN_fake_script)()
-local function CHDP_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
+coroutine.wrap(SITWSA_fake_script)()
+local function BUGRA_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(CHDP_fake_script)()
-local function ZSUDOQN_fake_script() -- esp.LocalScript 
+coroutine.wrap(BUGRA_fake_script)()
+local function IIEI_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2940,8 +3000,8 @@ local function ZSUDOQN_fake_script() -- esp.LocalScript
 		RunService:BindToRenderStep(UpdateName, 199, Update);
 	end)
 end
-coroutine.wrap(ZSUDOQN_fake_script)()
-local function QOGU_fake_script() -- infjump.LocalScript 
+coroutine.wrap(IIEI_fake_script)()
+local function FIAAJ_fake_script() -- infjump.LocalScript 
 	local script = Instance.new('LocalScript', infjump)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2974,8 +3034,8 @@ local function QOGU_fake_script() -- infjump.LocalScript
 		end)
 		end)
 end
-coroutine.wrap(QOGU_fake_script)()
-local function VBZT_fake_script() -- CraftAnyItem.LocalScript 
+coroutine.wrap(FIAAJ_fake_script)()
+local function MPJTGXP_fake_script() -- CraftAnyItem.LocalScript 
 	local script = Instance.new('LocalScript', CraftAnyItem)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -2984,8 +3044,8 @@ local function VBZT_fake_script() -- CraftAnyItem.LocalScript
 		event:FireServer(item)
 	end)
 end
-coroutine.wrap(VBZT_fake_script)()
-local function MOXIHOK_fake_script() -- Speed.LocalScript 
+coroutine.wrap(MPJTGXP_fake_script)()
+local function BCCHF_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	--SpeedVariables
@@ -3016,16 +3076,16 @@ local function MOXIHOK_fake_script() -- Speed.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MOXIHOK_fake_script)()
-local function VCMNO_fake_script() -- infyield.LocalScript 
+coroutine.wrap(BCCHF_fake_script)()
+local function ORLWSTU_fake_script() -- infyield.LocalScript 
 	local script = Instance.new('LocalScript', infyield)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 	end)
 end
-coroutine.wrap(VCMNO_fake_script)()
-local function WZZNUPI_fake_script() -- clicktp.LocalScript 
+coroutine.wrap(ORLWSTU_fake_script)()
+local function HNCH_fake_script() -- clicktp.LocalScript 
 	local script = Instance.new('LocalScript', clicktp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3041,26 +3101,305 @@ local function WZZNUPI_fake_script() -- clicktp.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(WZZNUPI_fake_script)()
-local function ULCB_fake_script() -- antiban.LocalScript 
+coroutine.wrap(HNCH_fake_script)()
+local function MJSLZT_fake_script() -- antiban.LocalScript 
 	local script = Instance.new('LocalScript', antiban)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.ah.Visible = true
 	end)
 end
-coroutine.wrap(ULCB_fake_script)()
-local function ZLQNL_fake_script() -- TextButton_4.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_4)
+coroutine.wrap(MJSLZT_fake_script)()
+local function HZEVX_fake_script() -- wall.LocalScript 
+	local script = Instance.new('LocalScript', wall)
 
-	local frame = script.Parent.Parent.h
-	local open = false
-	
 	script.Parent.MouseButton1Click:Connect(function()
-		if frame.Visible == false then
-			frame.Visible = true
+		local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+		local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+		local aa = h.x + 13
+		local bb = h.y - 2
+		local cc = h.z
+		local aaa = h.x - 13
+		local bbb = h.y - 2
+		local ccc = h.z
+		local aaaa = h.x
+		local bbbb = h.y - 2
+		local cccc = h.z + 13
+		local aaaaa = h.x
+		local bbbbb = h.y - 2
+		local ccccc = h.z - 13
+		local k_1 = "Stone Wall"
+		local k_2 = CFrame.new(aaaa, bbbb, cccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+		local k_3 = 177
+		local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+		Event:FireServer(k_1, k_2, k_3)
+		local l_1 = "Stone Wall"
+		local l_2 = CFrame.new(aaaaa, bbbbb, ccccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+		local l_3 = 177
+		local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+		Event:FireServer(l_1, l_2, l_3)
+		local m_1 = "Stone Wall"
+		local m_2 = CFrame.new(aaa, bbb, ccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+		local m_3 = 270
+		local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+		Event:FireServer(m_1, m_2, m_3)
+		local n_1 = "Stone Wall"
+		local n_2 = CFrame.new(aa, bb, cc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+		local n_3 = 270
+		local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+		Event:FireServer(n_1, n_2, n_3)
+	end)
+end
+coroutine.wrap(HZEVX_fake_script)()
+local function LBAUAT_fake_script() -- autocamp.LocalScript 
+	local script = Instance.new('LocalScript', autocamp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Fires = 1
+		local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+		local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+		local c = h.x + 5
+		local d = h.y - 2
+		local e = h.z
+		local j = h.x
+		local k = h.y - 2
+		local l = h.z
+		local aa = h.x - 5
+		local bb = h.y - 2
+		local cc = h.z
+		local aaa = h.x
+		local bbb = h.y - 2
+		local ccc = h.z + 5
+		local aaaa = h.x
+		local bbbb = h.y - 2
+		local cccc = h.z - 5
+		for i = 1,1 do
+			local C_1 = "Chest"
+			local C_2 = CFrame.new(j, k, l, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local C_3 = 0
+			Event:FireServer(C_1, C_2, C_3)
+		end
+		for i = 1,Fires do
+			local A_1 = "Campfire"
+			local A_2 = CFrame.new(c, d, e, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local A_3 = 0
+			Event:FireServer(A_1, A_2, A_3)
+		end
+		for i = 1,Fires do
+			local B_1 = "Campfire"
+			local B_2 = CFrame.new(aa, bb, cc, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local B_3 = 0
+			Event:FireServer(B_1, B_2, B_3)
+		end
+		for i = 1,Fires do
+			local D_1 = "Campfire"
+			local D_2 = CFrame.new(aaa, bbb, ccc, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local D_3 = 0
+			Event:FireServer(D_1, D_2, D_3)
+		end
+		for i = 1,Fires do
+			local E_1 = "Campfire"
+			local E_2 = CFrame.new(aaaa, bbbb, cccc, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local E_3 = 0
+			Event:FireServer(E_1, E_2, E_3)
 		end
 	end)
-	
 end
-coroutine.wrap(ZLQNL_fake_script)()
+coroutine.wrap(LBAUAT_fake_script)()
+local function SBSJU_fake_script() -- dropitemos.LocalScript 
+	local script = Instance.new('LocalScript', dropitemos)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local Player = game.Players.LocalPlayer
+		local Mouse = Player:GetMouse()
+	
+		function PressedE(key)
+			local Key = key:lower()
+			if Key == script.Parent.Parent.itemkeybind.Text then
+				for i=1, 100 do
+					game.ReplicatedStorage.Events.DropBagItem:FireServer(script.Parent.Parent.itemname.Text)
+				end
+			end
+		end
+		Mouse.KeyDown:connect(PressedE)
+	end)
+end
+coroutine.wrap(SBSJU_fake_script)()
+local function ITBY_fake_script() -- tpspam.LocalScript 
+	local script = Instance.new('LocalScript', tpspam)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i,v in pairs(game:GetService("Players"):GetChildren()) do
+			if v.Name:lower():find(script.Parent.Parent.Parent.Parent.h.Frame.tpspamus.Text:lower()) then
+				if v.Name == "Infinity_Chest" or v.Name == "BlueBearTimx" then
+					print("No Possibility Of Killing The Devs.")
+				else
+				local player = game.Players.LocalPlayer.Character
+					repeat
+						player.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+						wait(.001)
+					until v.Character.Humanoid.Health <= 0
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(ITBY_fake_script)()
+local function TPFUNVG_fake_script() -- chest.LocalScript 
+	local script = Instance.new('LocalScript', chest)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Fires = 1
+		local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+		local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+		local c = h.x + 5
+		local d = h.y - 2
+		local e = h.z
+		local j = h.x
+		local k = h.y - 2
+		local l = h.z
+		local aa = h.x - 5
+		local bb = h.y - 2
+		local cc = h.z
+		local aaa = h.x
+		local bbb = h.y - 2
+		local ccc = h.z + 5
+		local aaaa = h.x
+		local bbbb = h.y - 2
+		local cccc = h.z - 5
+		for i = 1,1 do
+			local C_1 = "Chest"
+			local C_2 = CFrame.new(j, k, l, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local C_3 = 0
+			Event:FireServer(C_1, C_2, C_3)
+		end
+		for i = 1,Fires do
+			local A_1 = ""
+			local A_2 = CFrame.new(c, d, e, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local A_3 = 0
+			Event:FireServer(A_1, A_2, A_3)
+		end
+		for i = 1,Fires do
+			local B_1 = ""
+			local B_2 = CFrame.new(aa, bb, cc, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local B_3 = 0
+			Event:FireServer(B_1, B_2, B_3)
+		end
+		for i = 1,Fires do
+			local D_1 = ""
+			local D_2 = CFrame.new(aaa, bbb, ccc, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local D_3 = 0
+			Event:FireServer(D_1, D_2, D_3)
+		end
+		for i = 1,Fires do
+			local E_1 = ""
+			local E_2 = CFrame.new(aaaa, bbbb, cccc, 1, 0, 0, 0, 1, -5.56028681e-08, 0, -5.56028681e-08, 1)
+			local E_3 = 0
+			Event:FireServer(E_1, E_2, E_3)
+		end
+	end)
+end
+coroutine.wrap(TPFUNVG_fake_script)()
+local function DFJCK_fake_script() -- goober.LocalScript 
+	local script = Instance.new('LocalScript', goober)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Goober Bag"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(DFJCK_fake_script)()
+local function ZMBST_fake_script() -- magm.LocalScript 
+	local script = Instance.new('LocalScript', magm)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Magnetite Mask"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(ZMBST_fake_script)()
+local function CGXL_fake_script() -- magg.LocalScript 
+	local script = Instance.new('LocalScript', magg)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Magnetite Greaves"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(CGXL_fake_script)()
+local function CDCQSES_fake_script() -- magc.LocalScript 
+	local script = Instance.new('LocalScript', magc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Magnetite Chestplate"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(CDCQSES_fake_script)()
+local function KQMH_fake_script() -- peep.LocalScript 
+	local script = Instance.new('LocalScript', peep)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Peeper Popsicle"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(KQMH_fake_script)()
+local function YVZN_fake_script() -- rad.LocalScript 
+	local script = Instance.new('LocalScript', rad)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Item = "Radio Pack"
+		local amount = 1.1
+		local price = 100000
+		game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
+	end)
+end
+coroutine.wrap(YVZN_fake_script)()
+local function IFVUQJW_fake_script() -- rain.LocalScript 
+	local script = Instance.new('LocalScript', rain)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if workspace:FindFirstChild('RainPart') ~= nil then
+			workspace.RainPart:Destroy()
+			game.ReplicatedStorage.Sounds.Nature.Rain:Stop()
+			game.ReplicatedStorage.Sounds.Nature.Thunder:Stop()
+			game.Lighting.Rain:Destroy()
+			game.ReplicatedStorage.Skies.Shine:Clone().Parent = game.Lighting
+		end
+	end)
+end
+coroutine.wrap(IFVUQJW_fake_script)()
+local function IPQI_fake_script() -- plant.LocalScript 
+	local script = Instance.new('LocalScript', plant)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Player = game:GetService("Players").LocalPlayer
+		local Mouse = Player:GetMouse()
+	
+		for _, v in pairs(workspace.Deployables:GetChildren()) do
+			if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 500 then
+				game.ReplicatedStorage.Events.InteractStructure:FireServer(v, script.Parent.Parent.frname.Text)
+			end
+		end
+	end)
+end
+coroutine.wrap(IPQI_fake_script)()
+local function LQVQWK_fake_script() -- h.LocalScript 
+	local script = Instance.new('LocalScript', h)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(LQVQWK_fake_script)()
